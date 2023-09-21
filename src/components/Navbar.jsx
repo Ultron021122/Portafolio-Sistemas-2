@@ -14,12 +14,15 @@ export function Navbar() {
     <nav className="bg-gray-800">
       <div className="container mx-auto p-4">
         <div className="flex justify-between items-center">
-          <NavLink
-            to="/"
-            className="text-gray-300 text-xl font-bold hover:text-gray-800 flex items-center"
-          >
-            <img className="h-8 mr-3" src={Logo} alt="Imagen del Logo de React" />
-            <h1 className="text-gray-300 text-2xl font-semibold">Portafolio</h1>
+          <NavLink to="/" className="flex items-center">
+            <img
+              className="h-8 mr-3"
+              src={Logo}
+              alt="Imagen del Logo de React"
+            />
+            <h1 className="text-gray-300 hover:text-white text-2xl font-semibold">
+              Portafolio
+            </h1>
           </NavLink>
           <div className="md:hidden">
             <button
@@ -44,19 +47,34 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <NavLink
               to="/"
-              className="block lg:inline-block text-gray-300 hover:text-white"
+              className={({ isActive }) =>
+                "block lg:inline-block" +
+                (isActive
+                  ? " text-blue-600 font-bold hover:text-blue-400"
+                  : " text-gray-300 hover:text-white")
+              }
             >
               Inicio
             </NavLink>
             <NavLink
-              to="/unidad"
-              className="block lg:inline-block text-gray-300 hover:text-white"
+              to="/actividades"
+              className={({ isActive }) =>
+                "block lg:inline-block" +
+                (isActive
+                  ? " text-blue-600 font-bold hover:text-blue-400"
+                  : " text-gray-300 hover:text-white")
+              }
             >
-              Unidad
+              Actividades
             </NavLink>
             <NavLink
               to="/desarrollador"
-              className="block lg:inline-block text-gray-300 hover:text-white"
+              className={({ isActive }) =>
+                "block lg:inline-block" +
+                (isActive
+                  ? " text-blue-600 font-bold hover:text-blue-400"
+                  : " text-gray-300 hover:text-white")
+              }
             >
               Desarrollador
             </NavLink>
@@ -68,23 +86,38 @@ export function Navbar() {
               <li className="block mt-2 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-700">
                 <NavLink
                   to="/"
-                  className="block font-medium lg:inline-block text-gray-300 hover:text-white"
+                  className={({ isActive }) =>
+                    "block lg:inline-block" +
+                    (isActive
+                      ? " text-blue-600 font-bold hover:text-blue-400"
+                      : " text-gray-300 hover:text-white")
+                  }
                 >
                   Inicio
                 </NavLink>
               </li>
               <li className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-700">
                 <NavLink
-                  to="/unidad"
-                  className="block font-medium lg:inline-block text-gray-300 hover:text-white"
+                  to="/actividades"
+                  className={({ isActive }) =>
+                    "block lg:inline-block" +
+                    (isActive
+                      ? " text-blue-600 font-bold hover:text-blue-400"
+                      : " text-gray-300 hover:text-white")
+                  }
                 >
-                  Unidad
+                  Actividades
                 </NavLink>
               </li>
               <li className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-700">
                 <NavLink
                   to="/desarrollador"
-                  className="block font-medium lg:inline-block text-gray-300 hover:text-white"
+                  className={({ isActive }) =>
+                    "block lg:inline-block" +
+                    (isActive
+                      ? " text-blue-600 font-bold hover:text-blue-400"
+                      : " text-gray-300 hover:text-white")
+                  }
                 >
                   Desarrollador
                 </NavLink>
