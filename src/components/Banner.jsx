@@ -1,7 +1,7 @@
-import Fond from "../assets/waves.svg";
-import imageBanner from "../assets/astronauta2.svg";
+import fond from "../assets/waves.svg";
+// import imageBanner from "../assets/astronauta2.svg";
 import { NavLink } from "react-router-dom";
-import { ScrollToSection } from "../utilities/scrollToSection";
+import { ScrollToSection } from "../utilities/ScrollToSection";
 
 export function Banner() {
   // Variable con URL de la imagen
@@ -13,10 +13,10 @@ export function Banner() {
         className="bg-no-repeat bg-cover bg-center bg-blend-multiply bg-gray-500 p-4 h-full py-10"
         style={{ backgroundImage }}
       >
-        <div className="md:grid-cols-3 md:gap-4 md:grid">
+        <div className="lg:grid-cols-3 lg:gap-4 lg:grid">
           <div className="md:col-span-2 px-4 mx-auto max-w-screen-xl text-center py-36 md:py-40 lg:py-48">
-            <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-white md:text-4xl lg:text-5xl">
-              Seminario de Uso, Adaptación y Explotación de Sistemas Operativos
+            <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-white lg:text-4xl">
+              Seminario de Solución de Problemas de Uso, Adaptación y Explotación de Sistemas Operativos
             </h1>
             <p className="mb-6 text-lg font-medium text-gray-500 lg:text-xl sm:px-6 xl:px-48 dark:text-gray-400">
               Portafolio de evidencias
@@ -37,13 +37,13 @@ export function Banner() {
               </NavLink>
             </div>
           </div>
-          <div className="hidden md:block">
+          {/* <div className="hidden lg:block">
             <img src={imageBanner} className="h-full" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-20">
-        <img src={Fond} alt="Onda" className="w-full h-full rotate-180" />
+        <img src={fond} alt="Onda" className="w-full h-full rotate-180" />
       </div>
     </section>
   );
