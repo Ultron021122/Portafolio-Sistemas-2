@@ -51,7 +51,7 @@ export function ClassInfo({
   unidades,
 }) {
   return (
-    <main className="bg-white py-20 sm:py-32" id="descripcion">
+    <main className="bg-white py-20 sm:py-24" id="descripcion">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-5xl md:text-center">
           <h2 className="text-base font-semibold leading-7 text-blue-600">
@@ -95,18 +95,18 @@ export function ClassInfo({
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-base font-medium leading-6 text-gray-900">
-              Sección
-            </dt>
-            <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              {section}
-            </dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-base font-medium leading-6 text-gray-900">
               Area de formación
             </dt>
             <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
               {area}
+            </dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-base font-medium leading-6 text-gray-900">
+              Sección
+            </dt>
+            <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+              {section}
             </dd>
           </div>
         </dl>

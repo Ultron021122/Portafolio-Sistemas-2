@@ -1,5 +1,5 @@
 import fond from "../assets/waves.svg";
-// import imageBanner from "../assets/astronauta2.svg";
+import imageBanner from "../assets/astronauta2.svg";
 import { NavLink } from "react-router-dom";
 import { ScrollToSection } from "../utilities/ScrollToSection";
 
@@ -37,9 +37,9 @@ export function Banner() {
               </NavLink>
             </div>
           </div>
-          {/* <div className="hidden lg:block">
+          <div className="hidden lg:block">
             <img src={imageBanner} className="h-full" />
-          </div> */}
+          </div>
         </div>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-20">
