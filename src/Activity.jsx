@@ -1,7 +1,7 @@
 export function Activity() {
-    return (
-        <div>
-            <h1>Página de la Unidad</h1>
-        </div>
-    )
+  return (
+    <div className="text-gray-900">
+      <h1>Página de la Unidad</h1>
+    </div>
+  );
 }

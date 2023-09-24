@@ -1,0 +1,19 @@
+/* Estilo personalizado para la animación del astronauta */
+.astronaut-animation {
+    /* Añade la animación de rebote */
+    animation-name: bounce;
+    animation-duration: 2s; /* Duración de la animación (ajusta según tu preferencia) */
+    animation-timing-function: ease-in-out; /* Función de temporización (ajusta según tu preferencia) */
+    animation-iteration-count: infinite; /* Repetir la animación indefinidamente */
+  }
+  
+  /* Definición de la animación de rebote */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Inicio y final: posición original */
+    }
+    50% {
+      transform: translateY(-20px); /* Punto más alto de la animación: posición elevada */
+    }
+  }
+  
