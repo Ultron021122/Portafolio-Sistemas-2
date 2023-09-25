@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 
 function TextMax({ texto, longitudMaxima }) {
-  const [mostrarCompleto, setMostrarCompleto] = useState(true);
+  const [mostrarCompleto, setMostrarCompleto] = useState(false);
 
   const textoRecortado = mostrarCompleto
     ? texto
@@ -75,6 +75,14 @@ export function ClassInfo({
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-base font-medium leading-6 text-gray-900">
+              Profesor(a)
+            </dt>
+            <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+              {maestro}
+            </dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-base font-medium leading-6 text-gray-900">
               Unidades temáticas
             </dt>
             <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
@@ -83,14 +91,6 @@ export function ClassInfo({
                       { unidad }
                   </p>
                 ))}
-            </dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-base font-medium leading-6 text-gray-900">
-              Profesor(a)
-            </dt>
-            <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              {maestro}
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
