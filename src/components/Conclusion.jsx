@@ -1,34 +1,37 @@
 export function Conclusion() {
-    return (
-      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
-        <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <p>Conclusión</p>
-          <figure className="mt-10">
-            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-              <p>
-                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                molestiae. Numquam corrupti in laborum sed rerum et corporis.”
-              </p>
-            </blockquote>
-            <figcaption className="mt-10">
-              <img
-                className="mx-auto h-10 w-10 rounded-full"
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-              />
-              <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-gray-900">Judith Black</div>
-                <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
-                  <circle cx={1} cy={1} r={1} />
-                </svg>
-                <div className="text-gray-600">CEO of Workcation</div>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-    )
-  }
-  
+  return (
+    <section className="bg-gray-800 text-white p-4">
+      <div className="container mx-auto md:w-11/12 lg:w-3/4 my-8 sm:my-0 pb-4">
+        <h2 className="text-2xl font-semibold mb-2">Conclusión:</h2>
+        <p className="text-gray-100">
+          A lo largo de la unidad temática de Seminario de Solución de Problemas
+          de Uso, Adaptación y Explotación de Sistemas Operativos, se ha
+          explorado y comprendido en profundidad la arquitectura interna de las
+          computadoras y su interacción fundamental con los sistemas operativos.
+          Esta unidad nos ha proporcionado una visión integral de cómo funciona
+          una máquina a nivel de hardware y cómo el sistema operativo desempeña
+          un papel crucial en su gestión y funcionamiento.
+        </p>
+        <p className="text-gray-100 mt-2">
+          Comenzando con la introducción, se destacó la importancia de
+          comprender la estructura y el funcionamiento del hardware, lo que
+          permitió apreciar la necesidad de un sistema operativo eficiente para
+          gestionar los recursos y brindar una experiencia de usuario fluida.
+          Este conocimiento es esencial en el mundo de la informática, ya que
+          sienta las bases para la comprensión de problemas más complejos
+          relacionados con los sistemas operativos.
+        </p>
+        <p className="text-gray-100 mt-2">
+          Durante la unidad, se abordaron diversos aspectos relevantes de los
+          sistemas operativos, centrándose en la instalación y configuración de
+          los mismos. Se exploraron temas como la instalación básica y los tipos
+          de sistemas operativos disponibles, la configuración de dispositivos,
+          la utilización de máquinas virtuales para el desarrollo y pruebas de
+          software, la partición del disco duro para una administración
+          eficiente del almacenamiento, y las diferentes distribuciones y
+          licencias de sistemas operativos.
+        </p>
+      </div>
+    </section>
+  );
+}

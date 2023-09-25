@@ -4,7 +4,6 @@ import { HomePage } from './HomePage';
 import { Activity } from './Activity';
 import { Developer } from './Developer';
 import { NotFound } from './NotFound';
-// import { Unite } from './components/Unite1';
 
 export function App() {
   return (
@@ -17,7 +16,6 @@ export function App() {
           <Route path="/*" element={<NotFound />} />
           <Route path="/actividades" element={<Activity />} />
           <Route path="/desarrollador" element={<Developer/>} />
-          {/* <Route path="/actividades/unidad/1" element={<Unite />} /> */}
         </Routes>
       </div>
     </Router>
