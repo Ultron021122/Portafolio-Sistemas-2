@@ -5,7 +5,7 @@ import { ScrollToSection } from "./ScrollToSection";
 
 export function Banner() {
   // Variable con URL de la imagen
-  const backgroundImage = 'url("../assets/sun-tornado.svg")';
+  const backgroundImage = 'url("../src/assets/sun-tornado.svg")';
 
   return (
     <section className="relative">
