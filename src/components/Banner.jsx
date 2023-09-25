@@ -1,7 +1,7 @@
 import fond from "../assets/waves.svg";
 import imageBanner from "../assets/astronauta2.svg";
 import { NavLink } from "react-router-dom";
-import { ScrollToSection } from "../utilities/ScrollToSection";
+import { ScrollToSection } from "./ScrollToSection";
 
 export function Banner() {
   // Variable con URL de la imagen
