@@ -2,9 +2,10 @@ import fond from "../assets/waves.svg";
 import imageBanner from "../assets/astronauta2.svg";
 import { NavLink } from "react-router-dom";
 import { ScrollToSection } from "./ScrollToSection";
-import backgroundImage from "../assets/sun-tornado.svg"
 
 export function Banner() {
+  // Variable con URL de la imagen
+  const backgroundImage = 'url("../assets/sun-tornado.svg")';
 
   return (
     <section className="relative">
