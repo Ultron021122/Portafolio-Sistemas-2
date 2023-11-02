@@ -1,14 +1,16 @@
 import fond from "../assets/waves.svg";
 import imageBanner from "../assets/astronauta2.svg";
-import backgroundImage from "../assets/sun-tornado.svg";
+import imageBack from "../assets/sun_tornado.svg";
 import { NavLink } from "react-router-dom";
 import { ScrollToSection } from "./ScrollToSection";
 
 export function Banner() {
+  // Variable con URL de la imagen
+  const backgroundImage = `url(${imageBack})`;
+
   return (
     <section className="relative">
-      <div
-        className="bg-no-repeat bg-cover bg-center bg-blend-multiply bg-gray-500 p-4 h-full py-10"
+      <div className="bg-no-repeat bg-cover bg-center bg-blend-multiply bg-gray-500 p-4 h-full py-10"
         style={{ backgroundImage }}
       >
         <div className="lg:grid-cols-3 lg:gap-4 lg:grid">
