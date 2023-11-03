@@ -1,5 +1,5 @@
 import fond from "../assets/waves.svg";
-import imageBanner from "../assets/astronauta2.svg";
+import imageBanner from "../assets/computer.svg";
 import imageBack from "../assets/sun_tornado.svg";
 import { NavLink } from "react-router-dom";
 import { ScrollToSection } from "./ScrollToSection";

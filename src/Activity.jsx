@@ -1,4 +1,7 @@
 import { Conclusion } from "./components/Conclusion";
+import AccordionBottom from "./components/AccordionBottom";
+import AccordionCenter from "./components/AccordionCenter";
+import AccordionTop from "./components/AccordionTop";
 
 export function Activity() {
   return (
@@ -17,22 +20,33 @@ export function Activity() {
           </h2>
         </div>
         <div className="mt-6">
-          <h3 className="text-xl md:text-2xl font-bold">
-            Objetivo de la unidad temática:
-          </h3>
-          <p className="text-base text-gray-600">
-            El estudiante reconoce la arquitectura interna de la máquina y la
-            relación con cada parte de esta con el sistema operativo.
-          </p>
-          <h3 className="text-xl md:text-2xl font-bold mt-2">Introducción:</h3>
-          <p className="text-base text-gray-600">
-            Esta unidad temática describe la estructura y funcionamiento de una
-            maquina a nivel de hardware exponiendo la necesidad de la gestión de
-            un sistema operativo. Involucra aspectos importantes de estructura y
-            diseño de sistemas operativos para su adaptación en el hardware.
-          </p>
+          <AccordionBottom title="Objetivo de la unidad temática" id="1">
+            El estudiante reconoce la arquitectura interna de la máquina y la relación
+            con cada parte de esta con el sistema operativo.
+          </AccordionBottom>
+          <AccordionCenter title="Introducción" id="2">
+            Esta unidad temática describe la estructura y funcionamiento de una 
+            máquina a nivel de hardware exponiendo la necesidad de la gestión de
+            un sistema operativo. Involucra aspectos importantes de estructura y diseño
+            de sistemas operativos para su adaptación en el hardware.
+            <ol className="mt-2">
+              <li className="mb-4">1. Instalación de sistemas operativos
+                <ol className="ml-6 md:ml-9 lg:ml-12">
+                  <li className="mb-2 mt-2">1.1. Instalación básica y tipos de sistemas operativos</li>
+                  <li className="mb-2">1.2. Configuración de dispositivos</li>
+                  <li className="mb-2">1.3. Máquina virtual</li>
+                  <li className="mb-2">1.4. Partición del disco duro</li>
+                  <li className="mb-2">1.5. Distribuciones y licencia</li>
+                </ol>
+              </li>
+            </ol>
+          </AccordionCenter>
+          <AccordionTop title="Actividades" id="3">
+            Unas
+          </AccordionTop>
         </div>
       </div>
+      {/* Actividades Unidad 1 */}
       <div className="container mx-auto md:w-11/12 lg:w-3/4 mt-4 sm:mt-0 pb-4">
         {/* Actividad 1 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 bg-white border border-gray-200 rounded-lg shadow w-full hover:bg-gray-100">
