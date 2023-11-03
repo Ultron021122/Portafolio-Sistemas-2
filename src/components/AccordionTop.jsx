@@ -9,11 +9,11 @@ function AccordionTop({title, id, children}) {
   };
 
   return (
-    <h2>
+    <div>
       <button
         onClick={toggleAccordion}
         type="button"
-        className={`flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 ${
+        className={`flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 ${
           isOpen
             ? 'hover:bg-gray-100 '
             : 'bg-gray-100'
@@ -41,14 +41,14 @@ function AccordionTop({title, id, children}) {
       {isOpen && (
         <div
           id={`collapse${id}`}
-          className="p-5 border border-b-0 border-gray-200"
+          className="p-5 border border-gray-200"
         >
-          <p className="mb-2 text-gray-500">
+          <div className="mb-2 text-gray-500">
             {children}
-          </p>
+          </div>
         </div>
       )}
-    </h2>
+    </div>
   );
 }
 

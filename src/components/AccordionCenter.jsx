@@ -2,14 +2,14 @@ import PropTypes from 'prop-types';
 import { useState } from "react";
 
 function AccordionCenter({title, id, children}) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <h2>
+    <div>
       <button
         onClick={toggleAccordion}
         type="button"
@@ -48,7 +48,7 @@ function AccordionCenter({title, id, children}) {
           </div>
         </div>
       )}
-    </h2>
+    </div>
   );
 }
 
