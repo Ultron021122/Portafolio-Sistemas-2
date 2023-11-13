@@ -12,7 +12,7 @@ function Conclusion({ textMain, children }) {
       <div className="container mx-auto md:w-11/12 lg:w-3/4 my-8 sm:my-0 pb-4">
         <h2 className="text-white md:text-center text-2xl font-semibold">
           Unidad temática.
-          <small className='ml-2 flex justify-center md:inline-block font-semibold text-gray-100'>
+          <small className='md:ml-2 flex justify-start md:inline-block font-semibold text-gray-100'>
             Conclusión
           </small>
         </h2>
