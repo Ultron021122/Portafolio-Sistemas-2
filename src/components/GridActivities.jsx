@@ -17,7 +17,7 @@ function GridActivities({title, activity, date, children}) {
                     {children}
                 </div>
             </div>
-            <hr className="border-t border-gray-700" />
+            <hr className="border-t border-gray-200" />
         </div>
     );
 }

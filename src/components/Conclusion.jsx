@@ -1,37 +1,35 @@
-export function Conclusion() {
+import PropTypes from 'prop-types';
+import imageBackground from "../assets/fondConclusion.jpg";
+
+function Conclusion({ textMain, children }) {
+  // Variable con URL de la imagen
+  const backgroundImage = `url(${imageBackground})`;
+
   return (
-    <section className="bg-gray-800 text-white p-4">
+    <section className="bg-no-repeat bg-cover bg-center bg-blend-multiply bg-gray-700 h-full p-4"
+      style={{ backgroundImage }}
+    >
       <div className="container mx-auto md:w-11/12 lg:w-3/4 my-8 sm:my-0 pb-4">
-        <h2 className="text-2xl font-semibold mb-2">Conclusión:</h2>
-        <p className="text-gray-100">
-          A lo largo de la unidad temática de Seminario de Solución de Problemas
-          de Uso, Adaptación y Explotación de Sistemas Operativos, se ha
-          explorado y comprendido en profundidad la arquitectura interna de las
-          computadoras y su interacción fundamental con los sistemas operativos.
-          Esta unidad nos ha proporcionado una visión integral de cómo funciona
-          una máquina a nivel de hardware y cómo el sistema operativo desempeña
-          un papel crucial en su gestión y funcionamiento.
+        <h2 className="text-white md:text-center text-2xl font-semibold">
+          Unidad temática.
+          <small className='ml-2 flex justify-center md:inline-block font-semibold text-gray-100'>
+            Conclusión
+          </small>
+        </h2>
+        <p className="text-gray-200 mt-2">
+          { textMain }
         </p>
-        <p className="text-gray-100 mt-2">
-          Comenzando con la introducción, se destacó la importancia de
-          comprender la estructura y el funcionamiento del hardware, lo que
-          permitió apreciar la necesidad de un sistema operativo eficiente para
-          gestionar los recursos y brindar una experiencia de usuario fluida.
-          Este conocimiento es esencial en el mundo de la informática, ya que
-          sienta las bases para la comprensión de problemas más complejos
-          relacionados con los sistemas operativos.
-        </p>
-        <p className="text-gray-100 mt-2">
-          Durante la unidad, se abordaron diversos aspectos relevantes de los
-          sistemas operativos, centrándose en la instalación y configuración de
-          los mismos. Se exploraron temas como la instalación básica y los tipos
-          de sistemas operativos disponibles, la configuración de dispositivos,
-          la utilización de máquinas virtuales para el desarrollo y pruebas de
-          software, la partición del disco duro para una administración
-          eficiente del almacenamiento, y las diferentes distribuciones y
-          licencias de sistemas operativos.
+        <p className="text-gray-200 mt-2">
+          { children }
         </p>
       </div>
     </section>
   );
 }
+
+Conclusion.propTypes = {
+  textMain: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired
+};
+
+export default Conclusion;
