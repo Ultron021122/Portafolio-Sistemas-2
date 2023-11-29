@@ -424,6 +424,36 @@ export function Activity() {
         conclusión, todos estos temas buscan que se tengan las mejores técnicas de desarrollo
         en caso de sistemas operativos.
       </Conclusion>
+      {/* Conclusión final */}
+      <div className="container md:w-11/12 lg:w-3/4 mx-auto p-2 md:p-0 my-5">
+        <div className="bg-white border border-gray-200 rounded-lg shadow w-full hover:bg-gray-100">
+          <h2 className="pt-10 text-center text-2xl md:text-3xl font-bold">
+            Conclusión final
+          </h2>
+          <div className="p-5">
+            <p className="text-gray-900">
+              En resumen, a lo largo de las unidades temáticas de la clase de Seminario de Solución de Problemas de Uso,
+              Adaptación y Explotación de Sistemas Operativos, hemos profundizado en la compleja interacción entre la
+              arquitectura interna de las computadoras y el papel fundamental de los sistemas operativos en su gestión.
+              Desde la comprensión inicial de la estructura del hardware hasta la aplicación práctica de conceptos en
+              sistemas operativos y concurrencia, hemos sentado las bases para abordar desafíos más avanzados en informática.
+            </p>
+            <p className="text-gray-900 mt-3">
+              La exploración de la gestión de procesos, la resolución de problemas clásicos como el de los filósofos comensales
+              y la implementación de soluciones utilizando herramientas como semáforos y mutex ha fortalecido no solo nuestra
+              comprensión teórica, sino también nuestras habilidades prácticas en la programación. La resolución de problemas
+              específicos, como el del productor-consumidor, ha mejorado nuestras capacidades para enfrentar desafíos prácticos
+              en entornos concurrentes.
+              También hemos buscado eficiencia mediante la implementación de prácticas seguras y la atención a las amenazas actuales,
+              elementos cruciales para mantener entornos robustos y confiables. Destacamos la utilidad de los scripts, no solo como
+              herramientas que ahorran tiempo, sino también como aliados capaces de realizar tareas complejas de manera efectiva.
+              La seguridad, un tema esencial, se erige como un pilar inquebrantable en el desarrollo de sistemas operativos, subrayando
+              la importancia de adoptar las mejores técnicas para garantizar la integridad y protección del entorno.
+              En términos generales ha sido una excelente clase.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
