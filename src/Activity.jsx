@@ -313,10 +313,116 @@ export function Activity() {
         profundizado en la comprensión de los desafíos inherentes a la concurrencia y he aplicado diversas soluciones utilizando herramientas 
         como semáforos, mutex y otros mecanismos de exclusión mutua."
       >
-        Estas tareas no solo han consolidado mi comprensión teórica de conceptos clave, como la sincronización de procesos y la gestión de recursos 
-        compartidos, sino que también han mejorado mis habilidades prácticas en la implementación de soluciones a través de la programación. La 
-        resolución de problemas específicos, como el del productor-consumidor, ha fortalecido mi capacidad para abordar desafíos prácticos en 
+        Estas tareas no solo han consolidado mi comprensión teórica de conceptos clave, como la sincronización de procesos y la gestión de recursos
+        compartidos, sino que también han mejorado mis habilidades prácticas en la implementación de soluciones a través de la programación. La
+        resolución de problemas específicos, como el del productor-consumidor, ha fortalecido mi capacidad para abordar desafíos prácticos en
         entornos concurrentes.
+      </Conclusion>
+
+      {/* Unidad 3 */}
+      <section className="container md:w-11/12 lg:w-3/4 mx-auto p-2 md:p-0">
+        <div className="mt-20">
+          <h2 className="text-center text-2xl md:text-3xl font-bold">
+            Unidad temática 3:
+            <small className="ml-2 flex justify-center md:inline-block font-semibold text-gray-500">
+              Optimización
+            </small>
+          </h2>
+        </div>
+        <div className="my-6">
+          <AccordionBottom title="Objetivo de la unidad temática" id="4">
+            El estudiante escribe de forma concisa, clara organizada y conveniente diversos algoritmos que optimicen
+            el desempeño de diversas tareas que gestiona el Sistema Operativo.
+          </AccordionBottom>
+          <AccordionCenter title="Introducción" id="5">
+            Esta unidad temática explica el funcionamiento de los procesos e hilos dentro del sistema operativo, asi
+            como su codificación en la resolución de distintos problemas de concurrencia y la configuración de servicios.
+            <ol className="mt-2">
+              <li className="mb-4"> 3. Optimización
+                <ol className="ml-6 md:ml-9 lg:ml-12">
+                  <li className="mb-2 mt-2">3.1. Scripts como parte del proceso</li>
+                  <li className="mb-2">3.2. Aplicaciones para la optimización del SO</li>
+                </ol>
+              </li>
+            </ol>
+          </AccordionCenter>
+          <AccordionTop title="Actividades" id="6">
+            <p className="text-center">A continuación se muestras las actividades de aprendizaje realizadas en la unidad.</p>
+            <hr className="border-t border-gray-200 mt-2" />
+            {/* Enlace actividad 14 */}
+            <GridActivities title="Actividad de aprendizaje 14" activity="Scripts para optimizar" date="19-nov-2023">
+              <button onClick={() => scrollToElement('Actividad14')} className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                Ver actividad
+              </button>
+            </GridActivities>
+            {/* Enlace actividad 15 */}
+            <GridActivities title="Actividad de aprendizaje 15" activity="Paralelismo" date="26-nov-2023">
+              <button onClick={() => scrollToElement('Actividad15')} className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                Ver actividad
+              </button>
+            </GridActivities>
+            {/* Enlace actividad 16 */}
+            <GridActivities title="Actividad de aprendizaje 16" activity="Seguridad" date="30-nov-2023">
+              <button onClick={() => scrollToElement('Actividad16')} className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                Ver actividad
+              </button>
+            </GridActivities>
+          </AccordionTop>
+        </div>
+      </section>
+      {/* División */}
+      <section>
+        <div className="w-full h-auto bg-gray-200">
+          <svg className="w-full h-16 sm:h-24 md:h-32 lg:h-48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+            preserveAspectRatio="none">
+            <path className="my-svg" fill="white" fillOpacity="1"
+              d="M0,224L34.3,202.7C68.6,181,137,139,206,154.7C274.3,171,343,245,411,245.3C480,245,549,171,617,122.7C685.7,75,754,53,823,69.3C891.4,85,960,139,1029,165.3C1097.1,192,1166,192,1234,197.3C1302.9,203,1371,213,1406,218.7L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            </path>
+          </svg>
+        </div>
+      </section>
+      {/* Actividades Unidad 3 */}
+      <section className="bg-gray-200">
+        <div className="container mx-auto md:w-11/12 lg:w-3/4 mt-4 sm:mt-0 pb-4">
+          {/* Actividad 14 */}
+          <Card identificador="Actividad14" level={3}
+            iframe="https://drive.google.com/file/d/14XPSxpHK63YzAEoUuQh0V2nw3XI1mGuc/preview"
+            number="14" subtitle="Scripts para optimizar"
+            button={true} url="https://youtu.be/0_shdUte8sU"
+          >
+            La actividad se enfoca en explorar el tema de scripts para la automatización de tareas al igual que su uso en la optimización
+            dentro de sistemas operativos.
+          </Card>
+          {/* Actividad 15 */}
+          <Card identificador="Actividad15" level={3}
+            iframe="https://drive.google.com/file/d/15K3YjOsgAbJA93_tXWdD1MogQ0-IMq0C/preview"
+            number="15" subtitle="Paralelismo"
+          >
+            La actividad se centra en el paralelismo esto específicamente mostrándose mediante una herramienta la cual es Intel Parallel
+            Studio XE en donde vemos también su enfoque y relación dentro del enfoque de multicore.
+          </Card>
+          {/* Actividad 16 */}
+          <Card identificador="Actividad16" level={3}
+            iframe="https://drive.google.com/file/d/1QgJHtJL5AW0us6Czsm9uWD9aZeIONjzO/preview"
+            number="16" subtitle="Seguridad"
+          >
+            La actividad se centra en el tema de seguridad esto dentro de varios enfoques como lo es seguridad dentro de sistemas operativos,
+            usuarios y red. Nos ayuda a entender las normas que debemos tomar en cuenta al momento del desarrollo de software para buscar la eficacia.
+          </Card>
+        </div>
+      </section>
+      {/* Conclusión Unidad 3 */}
+      <Conclusion
+        textMain="En esta unidad que fue realmente corta fuimos a la búsqueda de eficiencia,
+        mediante la implementación de prácticas seguras y la atención a las amenazas actuales
+        todas estas terminando por ser fundamentales para mantener un entorno robusto y
+        confiable."
+      >
+        Un poco a detalle el uso de scripts realmente es algo genial puesto que
+        ahorra tiempo y puede llegar a hacer tareas maravillosas. La seguridad me parece que
+        es un tema esencial y realmente necesario un tema que no se puede ignorar, en
+        conclusión, todos estos temas buscan que se tengan las mejores técnicas de desarrollo
+        en caso de sistemas operativos.
       </Conclusion>
     </main>
   );
