@@ -12,7 +12,7 @@ export function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<HomePage />} />
+          <Route exact path="/" element={<HomePage />} />
           <Route path="/*" element={<NotFound />} />
           <Route path="/actividades" element={<Activity />} />
           <Route path="/desarrollador" element={<Developer/>} />
